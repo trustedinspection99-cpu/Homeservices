@@ -1,4 +1,6 @@
 import Link from 'next/link';
+import { siteConfig } from '@/lib/config';
+import MobileMenu from './MobileMenu';
 
 export default function Header() {
   return (
@@ -15,6 +17,9 @@ export default function Header() {
             <Link href="/#faq" className="text-gray-700 hover:text-primary font-medium">
               FAQ
             </Link>
+            <a href={`tel:${siteConfig.phoneRaw}`} className="text-gray-700 hover:text-primary font-medium">
+              {siteConfig.phone}
+            </a>
             <Link
               href="/book"
               className="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 font-semibold"
@@ -22,14 +27,7 @@ export default function Header() {
               Book Now
             </Link>
           </div>
-          <div className="md:hidden">
-            <Link
-              href="/book"
-              className="bg-primary text-white px-4 py-2 rounded-lg text-sm font-semibold"
-            >
-              Book Now
-            </Link>
-          </div>
+          <MobileMenu />
         </div>
       </nav>
     </header>
