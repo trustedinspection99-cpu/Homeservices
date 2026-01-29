@@ -15,6 +15,7 @@ export default function ServiceCard({ service, cityContext }: ServiceCardProps) 
     <Link href={href} className="block">
       <div className="bg-white rounded-lg shadow-md hover:shadow-xl transition p-6 h-full flex flex-col">
         <div className="flex-grow">
+          <div className="text-4xl mb-3">{service.icon}</div>
           <div className="text-sm text-gray-500 mb-2">{service.category}</div>
           <h3 className="text-xl font-bold mb-3">{service.name}</h3>
           <p className="text-gray-600 mb-4 line-clamp-3">{service.description}</p>
