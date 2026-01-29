@@ -7,6 +7,7 @@ export interface Service {
   duration: string;
   features: string[];
   faqs: { question: string; answer: string; }[];
+  icon: string;
 }
 
 export const serviceCategories = [
@@ -29,6 +30,7 @@ export const services: Service[] = [
     description: 'Professional deep cleaning service for your entire home including bathrooms, kitchens, bedrooms, and living areas.',
     price: 149,
     duration: '3-4 hours',
+    icon: '🧹',
     features: [
       'Complete home sanitization',
       'Kitchen and bathroom deep clean',
@@ -49,6 +51,7 @@ export const services: Service[] = [
     description: 'Routine cleaning service to keep your home fresh and tidy on a weekly or bi-weekly basis.',
     price: 99,
     duration: '2-3 hours',
+    icon: '✨',
     features: [
       'Dusting and vacuuming',
       'Kitchen cleaning',
@@ -68,6 +71,7 @@ export const services: Service[] = [
     description: 'Professional carpet steam cleaning and stain removal service using industrial equipment.',
     price: 129,
     duration: '2-3 hours',
+    icon: '🛋️',
     features: [
       'Hot water extraction',
       'Stain treatment',
@@ -87,6 +91,7 @@ export const services: Service[] = [
     description: 'Interior and exterior window cleaning for streak-free, crystal clear windows.',
     price: 89,
     duration: '1-2 hours',
+    icon: '🪟',
     features: [
       'Interior and exterior cleaning',
       'Screen cleaning',
@@ -106,6 +111,7 @@ export const services: Service[] = [
     description: 'Comprehensive cleaning service for moving in or out of a property, ensuring it\'s spotless.',
     price: 199,
     duration: '4-5 hours',
+    icon: '📦',
     features: [
       'Complete property cleaning',
       'Inside cabinets and closets',
@@ -127,6 +133,7 @@ export const services: Service[] = [
     description: 'Professional TV wall mounting service with cable management and level installation.',
     price: 79,
     duration: '1 hour',
+    icon: '📺',
     features: [
       'Wall stud finding',
       'Secure mounting',
@@ -147,6 +154,7 @@ export const services: Service[] = [
     description: 'Expert assembly service for all types of furniture from IKEA, Wayfair, Amazon, and more.',
     price: 69,
     duration: '1-2 hours',
+    icon: '🪑',
     features: [
       'All furniture brands',
       'Professional tools',
@@ -166,6 +174,7 @@ export const services: Service[] = [
     description: 'Professional picture and artwork hanging service with precise leveling and secure mounting.',
     price: 49,
     duration: '30 minutes - 1 hour',
+    icon: '🖼️',
     features: [
       'Precise leveling',
       'Wall protection',
@@ -185,6 +194,7 @@ export const services: Service[] = [
     description: 'Custom shelf installation for floating shelves, bookcases, and storage solutions.',
     price: 59,
     duration: '1 hour',
+    icon: '📚',
     features: [
       'Floating shelf installation',
       'Level mounting',
@@ -204,6 +214,7 @@ export const services: Service[] = [
     description: 'Installation and configuration of smart home devices including thermostats, locks, cameras, and lighting.',
     price: 99,
     duration: '1-2 hours',
+    icon: '🏠',
     features: [
       'Smart thermostat installation',
       'Smart lock setup',
@@ -225,6 +236,7 @@ export const services: Service[] = [
     description: 'Professional ceiling fan installation with electrical connection and balancing.',
     price: 119,
     duration: '1-2 hours',
+    icon: '💨',
     features: [
       'Electrical wiring',
       'Fan balancing',
@@ -244,6 +256,7 @@ export const services: Service[] = [
     description: 'Installation of indoor and outdoor light fixtures including chandeliers, pendant lights, and recessed lighting.',
     price: 89,
     duration: '1 hour',
+    icon: '💡',
     features: [
       'All fixture types',
       'Electrical connection',
@@ -263,6 +276,7 @@ export const services: Service[] = [
     description: 'Smart doorbell and traditional doorbell installation with electrical wiring.',
     price: 79,
     duration: '1 hour',
+    icon: '🔔',
     features: [
       'Wired and wireless doorbells',
       'Smart doorbell setup',
@@ -282,6 +296,7 @@ export const services: Service[] = [
     description: 'Professional garbage disposal installation with plumbing and electrical connection.',
     price: 139,
     duration: '1-2 hours',
+    icon: '🚰',
     features: [
       'Disposal mounting',
       'Plumbing connection',
@@ -301,6 +316,7 @@ export const services: Service[] = [
     description: 'Complete toilet installation including removal of old toilet and proper sealing.',
     price: 159,
     duration: '2 hours',
+    icon: '🚽',
     features: [
       'Old toilet removal',
       'Wax ring replacement',
@@ -322,6 +338,7 @@ export const services: Service[] = [
     description: 'Professional lawn mowing and edging service for a perfectly manicured yard.',
     price: 59,
     duration: '30 minutes - 1 hour',
+    icon: '🌱',
     features: [
       'Precision mowing',
       'Edging and trimming',
@@ -341,6 +358,7 @@ export const services: Service[] = [
     description: 'Complete gutter cleaning and debris removal to prevent water damage and clogs.',
     price: 99,
     duration: '1-2 hours',
+    icon: '🏘️',
     features: [
       'Debris removal',
       'Downspout flushing',
@@ -360,6 +378,7 @@ export const services: Service[] = [
     description: 'High-pressure washing for driveways, sidewalks, decks, siding, and patios.',
     price: 129,
     duration: '2-3 hours',
+    icon: '💦',
     features: [
       'Driveway cleaning',
       'Deck and patio washing',
@@ -379,6 +398,7 @@ export const services: Service[] = [
     description: 'Professional snow plowing and shoveling service for driveways, walkways, and parking areas.',
     price: 79,
     duration: '30 minutes - 1 hour',
+    icon: '❄️',
     features: [
       'Driveway plowing',
       'Walkway clearing',
@@ -398,6 +418,7 @@ export const services: Service[] = [
     description: 'Full-service junk removal and hauling for furniture, appliances, yard waste, and debris.',
     price: 149,
     duration: '1-2 hours',
+    icon: '🗑️',
     features: [
       'Furniture removal',
       'Appliance hauling',
@@ -419,6 +440,7 @@ export const services: Service[] = [
     description: 'Professional drywall hole repair, crack patching, and texture matching.',
     price: 89,
     duration: '1-2 hours',
+    icon: '🔨',
     features: [
       'Hole patching',
       'Crack repair',
@@ -438,6 +460,7 @@ export const services: Service[] = [
     description: 'Door adjustment, hinge repair, lock repair, and weatherstripping replacement.',
     price: 79,
     duration: '1 hour',
+    icon: '🚪',
     features: [
       'Door alignment',
       'Hinge repair/replacement',
@@ -457,6 +480,7 @@ export const services: Service[] = [
     description: 'Leaky faucet repair, cartridge replacement, and handle fixes for all faucet types.',
     price: 99,
     duration: '1 hour',
+    icon: '🔧',
     features: [
       'Leak repair',
       'Cartridge replacement',
@@ -476,6 +500,7 @@ export const services: Service[] = [
     description: 'Outlet repair, switch replacement, and minor electrical troubleshooting.',
     price: 109,
     duration: '1 hour',
+    icon: '⚡',
     features: [
       'Outlet replacement',
       'Switch repair',
@@ -495,6 +520,7 @@ export const services: Service[] = [
     description: 'Furnace and AC tune-up, filter replacement, and seasonal maintenance service.',
     price: 129,
     duration: '1-2 hours',
+    icon: '🌡️',
     features: [
       'Filter replacement',
       'System inspection',
@@ -516,6 +542,7 @@ export const services: Service[] = [
     description: 'Complete air conditioning system tune-up and maintenance for optimal summer performance.',
     price: 119,
     duration: '1-2 hours',
+    icon: '🧊',
     features: [
       'Refrigerant check',
       'Coil cleaning',
@@ -535,6 +562,7 @@ export const services: Service[] = [
     description: 'Comprehensive furnace inspection and maintenance for safe, efficient winter heating.',
     price: 119,
     duration: '1-2 hours',
+    icon: '🔥',
     features: [
       'Safety inspection',
       'Filter replacement',
@@ -554,6 +582,7 @@ export const services: Service[] = [
     description: 'Professional holiday light installation and removal service for homes and businesses.',
     price: 199,
     duration: '2-4 hours',
+    icon: '🎄',
     features: [
       'Design consultation',
       'Professional installation',
@@ -573,6 +602,7 @@ export const services: Service[] = [
     description: 'Complete spring yard cleanup including debris removal, bed preparation, and lawn dethatching.',
     price: 159,
     duration: '3-4 hours',
+    icon: '🌷',
     features: [
       'Debris removal',
       'Bed cleanup',
@@ -592,6 +622,7 @@ export const services: Service[] = [
     description: 'Autumn leaf removal, bed preparation, and winterization service for your property.',
     price: 159,
     duration: '3-4 hours',
+    icon: '🍂',
     features: [
       'Leaf removal',
       'Gutter cleaning',
@@ -613,6 +644,7 @@ export const services: Service[] = [
     description: 'Professional local moving service for residential and small commercial moves within the city.',
     price: 299,
     duration: '4-6 hours',
+    icon: '🚚',
     features: [
       'Professional movers',
       'Furniture protection',
@@ -632,6 +664,7 @@ export const services: Service[] = [
     description: 'Professional packing service with quality materials to protect your belongings during the move.',
     price: 199,
     duration: '3-4 hours',
+    icon: '📦',
     features: [
       'Quality packing materials',
       'Fragile item protection',
@@ -653,6 +686,7 @@ export const services: Service[] = [
     description: 'Expert IKEA furniture assembly service for all products with guaranteed quality.',
     price: 69,
     duration: '1-2 hours',
+    icon: '🔩',
     features: [
       'All IKEA products',
       'Professional tools',
@@ -672,6 +706,7 @@ export const services: Service[] = [
     description: 'Professional assembly of treadmills, ellipticals, weight benches, and home gym equipment.',
     price: 99,
     duration: '2-3 hours',
+    icon: '🏋️',
     features: [
       'All equipment brands',
       'Proper calibration',
@@ -691,6 +726,7 @@ export const services: Service[] = [
     description: 'Professional assembly of office desks, chairs, filing cabinets, and workstations.',
     price: 79,
     duration: '1-2 hours',
+    icon: '🖥️',
     features: [
       'Desk assembly',
       'Chair assembly',
@@ -710,6 +746,7 @@ export const services: Service[] = [
     description: 'Safe and secure assembly of backyard playground sets, swing sets, and play structures.',
     price: 249,
     duration: '4-6 hours',
+    icon: '🎪',
     features: [
       'Swing set assembly',
       'Ground anchoring',
@@ -740,4 +777,4 @@ export function generateServicePaths() {
   return services.map(service => ({
     slug: service.slug,
   }));
-  }
+    }
